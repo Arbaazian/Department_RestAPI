@@ -7,5 +7,10 @@ import com.codebuffer.SpringBoottutorial.Entity.Department;
 
 @Repository
 public interface DepartmentRepo extends JpaRepository<Department, Long> {
+	
+	public Department findByDeptNameIgnoreCase(String deptName);
+		
+		
+	
 
 }
